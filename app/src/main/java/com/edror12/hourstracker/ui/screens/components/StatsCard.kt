@@ -50,7 +50,7 @@ fun StatsCard(modifier: Modifier = Modifier) {
                 )
                 VerticalDivider(
                     modifier = Modifier.height(80.dp),
-                    color = MaterialTheme.colorScheme.secondary
+                    color = MaterialTheme.colorScheme.secondary.copy(alpha = 0.5f)
                 )
                 Text(
                     text = "Break",
@@ -60,7 +60,7 @@ fun StatsCard(modifier: Modifier = Modifier) {
                 )
                 VerticalDivider(
                     modifier = Modifier.height(80.dp),
-                    color = MaterialTheme.colorScheme.secondary
+                    color = MaterialTheme.colorScheme.secondary.copy(alpha = 0.5f)
                 )
                 Text(
                     text = "Overtime",
