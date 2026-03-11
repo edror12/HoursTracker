@@ -23,7 +23,6 @@ fun SquaredButton(
     FilledTonalButton(
         onClick = { onClick() },
         contentPadding = PaddingValues(
-//            horizontal = 120.dp,
             vertical = 16.dp
         ),
         shape = RoundedCornerShape(15.dp),

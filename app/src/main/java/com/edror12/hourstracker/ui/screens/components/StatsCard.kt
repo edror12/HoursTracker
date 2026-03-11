@@ -23,10 +23,7 @@ import androidx.compose.ui.unit.dp
 @Preview
 @Composable
 fun StatsCard(modifier: Modifier = Modifier) {
-    Column(
-        modifier = modifier.padding(20.dp)
-            .fillMaxWidth(0.9f)
-    ) {
+
         ElevatedCard(
             elevation = CardDefaults.cardElevation(
                 defaultElevation = 6.dp
@@ -34,7 +31,9 @@ fun StatsCard(modifier: Modifier = Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = MaterialTheme.colorScheme.surfaceVariant,
             ),
-            modifier = Modifier
+            modifier = modifier
+                .padding(20.dp)
+                .fillMaxWidth(0.8f)
                 .size(width = 360.dp, height = 100.dp)
         ) {
             Row(
@@ -71,4 +70,4 @@ fun StatsCard(modifier: Modifier = Modifier) {
             }
         }
     }
-}
+
