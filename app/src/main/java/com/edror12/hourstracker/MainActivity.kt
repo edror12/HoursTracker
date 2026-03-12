@@ -18,6 +18,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.edror12.hourstracker.ui.screens.ClockScreen
+import com.edror12.hourstracker.ui.screens.JobsScreen
+import com.edror12.hourstracker.ui.screens.TimesheetScreen
 import com.edror12.hourstracker.ui.theme.HoursTrackerTheme
 
 class MainActivity : ComponentActivity() {

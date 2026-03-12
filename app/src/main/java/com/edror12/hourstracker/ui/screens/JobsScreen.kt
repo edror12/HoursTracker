@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 import androidx.compose.ui.unit.dp
 import com.edror12.hourstracker.ui.screens.components.FloatingAddButton
-import com.edror12.hourstracker.ui.screens.components.JobEntry
+import com.edror12.hourstracker.ui.screens.components.GenericFloatingEntry
 
 @OptIn(ExperimentalMaterial3Api::class)
 @PreviewScreenSizes
@@ -42,7 +42,12 @@ fun JobsScreen() {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 items(jobs) {
-                    JobEntry(job = it)
+                    GenericFloatingEntry(
+                        entryTitle = it,
+                        entryDescription = "Company one day job",
+                        rightDetailTop = "Rate",
+                        rightDetailBottom = "$10.00"
+                    )
                 }
                 item {
                     Spacer(modifier = Modifier.padding(vertical = 5.dp))
