@@ -8,20 +8,9 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
-import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
 
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountBox
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
@@ -30,7 +19,8 @@ import androidx.compose.ui.unit.sp
 
 import com.edror12.hourstracker.ui.screens.components.StatsCard
 import com.edror12.hourstracker.ui.screens.components.AnimatedClock
-import com.edror12.hourstracker.ui.screens.components.SquaredButton
+import com.edror12.hourstracker.ui.screens.components.ControlButtons
+import com.edror12.hourstracker.ui.screens.components.JobsMenu
 
 @PreviewScreenSizes
 @Composable
@@ -55,10 +45,14 @@ fun ClockScreen() {
                     fontSize = 18.sp,
                 )
                 AnimatedClock()
+                JobsMenu()
             }
-            Column(modifier = Modifier.align(Alignment.BottomCenter)) {
-                SquaredButton()
-                SquaredButton()
+            Column(
+                modifier = Modifier.align(Alignment.BottomCenter),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                ControlButtons()
             }
         }
     }
