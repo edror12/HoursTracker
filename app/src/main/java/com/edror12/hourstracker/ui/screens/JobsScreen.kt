@@ -34,7 +34,7 @@ fun JobsScreen() {
         ) {
             val jobs: List<String> = listOf(
                 "Job 1", "Job 2", "Job 3", "Job 4", "Job 5", "Job 6", "Job 7", "Job 8", "Job 9",
-                "Job 1", "Job 2", "Job 3", "Job 4", "Job 5", "Job 6", "Job 7", "Job 8", "Job 9"
+                "Job 10", "Job 11"
             )
 
             LazyColumn(
