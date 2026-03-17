@@ -55,7 +55,7 @@ fun NavBottomBarExampleApp() {
             }
         }
     ) {
-        ClockScreen()
+        JobsScreen()
     }
 }
 
